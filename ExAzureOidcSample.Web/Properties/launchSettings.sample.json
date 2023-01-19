@@ -1,0 +1,31 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:38066",
+      "sslPort": 44318
+    }
+  },
+  "profiles": {
+    "ExAzureOidcSample.Web": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_AzureAd__TenantId": "00000000-0000-1111-2222-7edd0d0bc816",
+        "ASPNETCORE_AzureAd__ClientId": "11111111-2222-3333-3333-d333b4583f53",
+        "ASPNETCORE_AzureAd__ClientSecret": "hakkou sita secret"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

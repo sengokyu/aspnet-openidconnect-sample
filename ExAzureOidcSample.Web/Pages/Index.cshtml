@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>Index page</h1>
+
+@if (User.Identity?.IsAuthenticated == true)
+{
+    <p>あなたは認証済です。</p>
+}
+else
+{
+    <p>あなたは未認証です。</p>
+    <p>保護されたページへアクセスすると、ログイン画面へ遷移します。</p>
+}
+
+<p>
+    <a href="Protected/">保護されたページへ</a>
+</p>
